@@ -488,7 +488,7 @@ button {
   font-size: 14px;
   text-transform: uppercase;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .benefits__title {
     text-align: center;
   }
@@ -500,7 +500,7 @@ button {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .benefits__list {
     margin-bottom: -30px;
   }
@@ -531,7 +531,7 @@ button {
 .work {
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .work {
     display: none;
   }
@@ -608,7 +608,7 @@ button {
 .team__item {
   width: 100%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team__item {
     margin-bottom: 30px;
   }
