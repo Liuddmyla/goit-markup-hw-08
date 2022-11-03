@@ -3,6 +3,10 @@
     padding-bottom: 60px;
 
     background-color: var(--accent-fon-color);
+
+    @media screen and (max-width: 1199.98px) {
+    text-align: center;
+}    
 }
 
 .address {
@@ -11,6 +15,10 @@
 
 .address__list {
     margin-top: 20px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        margin-bottom: 0;
+    }
 }
 
 .address__maps {
@@ -45,11 +53,17 @@
     }
 }
 
-
-
 .forma {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: center;      
+    }
+
+     @media screen and (min-width: 1200px) {
+         display: flex;
+         align-items: baseline;
+    }    
 }
 
 .footer-soc__text,
@@ -62,11 +76,19 @@
 }
 
 .footer-soc {
-    margin-left: 70px;
-    margin-right: 93px;
+    @media screen and (min-width: 768px) {
+        margin-left: 165px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+        margin-right: 93px;
+    }
+    
 }
 
 .footer-soc__list {
+    justify-content: center;
+    margin-bottom: 60px;
     display: flex;
     gap: 10px;
 }
@@ -110,6 +132,7 @@
     border: transparent;
 
     margin: 0 auto;
+    margin-top: 20px;
     padding: 10px 28px;
     gap: 10px;
     width: 200px;
@@ -127,18 +150,22 @@
     &:focus {
         background-color: var(--activ-color);
     }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+        }
 }
 
-
-
 .form-send {
+    @media screen and (min-width: 1200px) {
     display: flex;
     gap: 12px;
+}    
 }
 
 .footer-field__input {
     display: block;
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 15px 16px;
     padding-left: 79px;
@@ -151,10 +178,18 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 358px;
+    }
 }
 
 .footer-field {
     position: relative;
+    
 }
 
 .footer-field__label {
