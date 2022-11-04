@@ -6,10 +6,11 @@
 
     display: flex;
     justify-content: center;
+    gap: 8px;
 }
 .filtr__item{
     @media screen and (max-width: 767.98px) {
-        margin-bottom: 15px;
+        margin-bottom: 7px;
     }
 }
 
@@ -41,12 +42,8 @@
     }
 }
 
-.filtr .filtr__item+.filtr__item {
-    margin-left: 8px;
-}
-
 .portfolio__list {
-    margin-top: 25px;
+    margin-top: 33px;
 
     @media screen and (max-width: 767.98px) {
     margin-bottom: -30px;
