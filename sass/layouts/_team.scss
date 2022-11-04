@@ -32,7 +32,7 @@
 
 .team__list { 
     
-   @media screen and (min-width: 768px) {
+@include tablet {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -45,11 +45,12 @@
     @media screen and (max-width: 767.98px) {
         margin-bottom: 30px;
     }
-    @media screen and (min-width: 768px) {
+
+    @include tablet {
         width: calc((100% - 60px)/2);             
     }
     
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: calc((100% - 120px)/4);
     }
 }

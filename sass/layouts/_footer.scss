@@ -16,7 +16,7 @@
 .address__list {
     margin-top: 20px;
     margin-bottom: 60px;
-    @media screen and (min-width: 1200px){
+    @include desktop {
         margin-bottom: 0;
     }
 }
@@ -54,15 +54,15 @@
 }
 
 .forma {
-    @media screen and (min-width:768px) {
+    @include tablet {
         display: flex;
         flex-wrap: wrap;  
         justify-content: center;      
     }
 
-     @media screen and (min-width: 1200px) {
-         display: flex;
-         align-items: baseline;
+    @include desktop {
+        display: flex;
+        align-items: baseline;
     }    
 }
 
@@ -76,10 +76,11 @@
 }
 
 .footer-soc {
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-left: 165px;
     }
-    @media screen and (min-width:1200px) {
+
+    @include desktop {
         margin-left: 70px;
         margin-right: 93px;
     }
@@ -151,13 +152,13 @@
         background-color: var(--activ-color);
     }
 
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             margin-top: 0;
         }
 }
 
 .form-send {
-    @media screen and (min-width: 1200px) {
+    @include desktop {
     display: flex;
     gap: 12px;
 }    
@@ -179,10 +180,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-    @media screen and (min-width: 768px) {
+    @include tablet {
         width: 450px;
     }
-    @media screen and (min-width: 1200px){
+    @include desktop{
         width: 358px;
     }
 }
