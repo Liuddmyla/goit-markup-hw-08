@@ -78,6 +78,7 @@
 
 .nav {
     display: flex;
+    display: none;
 }
 
 .nav__item+.nav__item {
@@ -96,6 +97,7 @@
 .contacts {
     display: flex;
     margin-left: auto;
+    display: none;
 }
 
 .contacts__icons {
@@ -103,4 +105,140 @@
 
     fill: currentColor;
     margin-right: 10px;
+}
+
+
+
+
+.menu-open-btn{
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.mob-menu{
+    position: fixed;
+    top: 0;
+    background-color: var(--secondary-color);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    >.container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+    }
+}
+
+.menu-close-btn{
+    display: block;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+}
+
+.mob-menu__link{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.mob-menu__link--current{
+    color: var(--contrast-color);
+}
+.mob-menu__item{
+margin-bottom: 32px;
+}
+
+.tel-menu__link{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color:var(--contrast-color);
+}
+.tel-menu__item{
+    margin-bottom: 32px;
+}
+
+.mail-menu__link{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+.mail-menu__item{
+    margin-bottom: 64px;
+}
+
+.soc-menu__link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--contrast-color);
+}
+.soc-menu__list{
+    display: flex;
+    gap: 10px;
+   
+}
+.soc-menu__item{
+    position: relative;
+}
+.soc-menu__item:not(:first-child) {
+    padding-left: 10px;
+}
+.soc-menu__item:not(:first-child)::before{
+    content: '';
+    width: 1px;
+    height: 22px;
+    background-color:  rgba(33, 33, 33, 0.2);
+    position: absolute; 
+    top: 0;
+    left: 0;  
+}
+.menu-close-btn__icon{
+    &:hover,
+    &:focus{
+        fill: var(--contrast-color);
+    }
+}
+
+@include tablet {
+    .mob-menu{
+        display: none;
+    }
+    .menu-open-btn{
+        display: none;
+    }
+    .nav,
+    .contacts{
+       display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+   .contacts{
+    flex-direction: column;
+    justify-content: flex-start;
+   }
+  
+   .contacts__link{
+    margin: 0;
+    padding: 0;
+   }
+
+   .contacts__item:last-child{
+    margin-left: -15px;
+    margin-top: 10px;
+   }
 }
