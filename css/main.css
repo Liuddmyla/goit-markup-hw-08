@@ -157,6 +157,11 @@ button {
     min-height: 581px;
   }
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 100%;
+  }
+}
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
